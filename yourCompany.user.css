@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           yourCompany
 @namespace      github.com/openstyles/stylus
-@version        1.0.0
+@version        1.0.1
 @description    Generic branding for the main Invida web app 
 @author         Invida
 ==/UserStyle== */
@@ -9,7 +9,7 @@
 
 	body {
 		--logo-url: url("https://github.com/InvidaDev/user-styles/blob/main/logo/your-company.png?raw=true");
-		--primary-color: #CC9900;
+		--primary-color: red;
 		--sidebar-color: #000;
 		--sidebar-disabled-feature-color: #5e626b;
 	}
