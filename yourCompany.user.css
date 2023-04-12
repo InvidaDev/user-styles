@@ -1,15 +1,15 @@
 /* ==UserStyle==
 @name           yourCompany
 @namespace      github.com/openstyles/stylus
-@version        1.0.1
+@version        1.0.2
 @description    Generic branding for the main Invida web app 
 @author         Invida
 ==/UserStyle== */
 @-moz-document domain("invida.co.uk") {
 
 	body {
-		--logo-url: url("https://github.com/InvidaDev/user-styles/blob/main/logo/your-company.png?raw=true");
-		--primary-color: red;
+		--logo-url: url("https://raw.githubusercontent.com/InvidaDev/user-styles/main/logo/your-company.png");
+		--primary-color: #CC9900;
 		--sidebar-color: #000;
 		--sidebar-disabled-feature-color: #5e626b;
 	}
