@@ -1,0 +1,98 @@
+/* ==UserStyle==
+@name           12/04/2023, 15:02:26
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    Generic branding for the main Invida web app 
+@author         Invida
+==/UserStyle== */
+@-moz-document domain("invida.co.uk") {
+
+	body {
+		--logo-url: url("https://github.com/InvidaDev/user-styles/blob/main/logo/your-company.png?raw=true");
+		--primary-color: #CC9900;
+		--sidebar-color: #000;
+		--sidebar-disabled-feature-color: #5e626b;
+	}
+
+	span.tenant-logo,
+	span.login-logo {
+		background-image: var(--logo-url) !important;
+		position: relative !important;
+		top: 7px;
+		left: 0;
+		transform: scale(1.2);
+	}
+
+	html[data-ng-app="app"].ng-scope .login-page .login-v2 .login-content {
+		background-color: var(--primary-color) !important;
+	}
+
+	html[data-ng-app="app"].ng-scope .login-page .login-v2 .login-content .login-buttons button[type=submit] {
+		font-weight: bold !important;
+		background-color: #000 !important;
+		color: #fff !important;
+	}
+	html[data-ng-app="app"].ng-scope .login-page .login-v2 .login-content .login-buttons button[type=submit]:hover {
+		background-color: #472816 !important;
+	}
+	.navbar.navbar-inverse .navbar-brand,
+	.sidebar .nav > li.active > a,
+	.sidebar .nav > li.active > a:focus,
+	.sidebar .nav > li.active > a:hover,
+	.page-sidebar-minified .sidebar .nav > li.has-sub.active:focus > a,
+	.page-sidebar-minified .sidebar .nav > li.has-sub.active:hover > a,
+	.page-sidebar-minified .sidebar .nav > li.has-sub.active > a,
+	.label.label-theme,
+	.btn.btn-scroll-to-top {
+		background: var(--primary-color) !important;
+	}
+	.navbar.navbar-inverse .navbar-brand {
+		color: #fff !important;
+	}
+	.text-theme,
+	.sidebar .sub-menu > li.active > a:before {
+		color: var(--primary-color) !important;
+	}
+	.pace-progress {
+		background: var(--primary-color) !important;
+	}
+	.pace .pace-activity {
+		border-top-color: var(--primary-color) !important;
+		border-left-color: var(--primary-color) !important;
+	}
+	.page-with-light-sidebar .sidebar .nav > li.active > a > i {
+		color: var(--primary-color) !important;
+	}
+	.page-with-light-sidebar .sidebar .nav > li.active > a .badge,
+	.page-with-light-sidebar .sidebar .nav > li.active > a .label.label-theme {
+		background: var(--primary-color) !important;
+	}
+	
+	.top-menu .nav > li.active > a,
+	.top-menu .nav > li.active > a:focus,
+	.top-menu .nav > li.active > a:hover {
+		background: var(--primary-color) !important;
+	}
+
+	.job-header .job-content-area {
+		border-color: var(--primary-color) !important;
+	}
+
+	#sidebar {
+		background-color: var(--sidebar-color) !important;
+	}
+	.sidebar-bg {
+		background-color: var(--sidebar-color) !important;
+	}
+	.feature-disabled a,
+	.feature-disabled a:hover {
+		color: var(--sidebar-disabled-feature-color) !important;
+	}
+
+	.jvectormap-marker {
+		fill: var(--primary-color) !important;
+	}
+	.sidebar-minify-btn {
+		background-color: var(--primary-color) !important;
+	}
+}
