@@ -9,7 +9,7 @@
 
 	body {
 		--logo-url: url("https://github.com/InvidaDev/user-styles/blob/main/logo/your-company.png?raw=true");
-		--primary-color: red;
+		--primary-color: #CC9900;
 		--sidebar-color: #000;
 		--sidebar-disabled-feature-color: #5e626b;
 	}
