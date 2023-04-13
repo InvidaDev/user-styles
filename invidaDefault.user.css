@@ -25,6 +25,7 @@
 		
 		--sidebar-color: var(--primary-600);
 		--sidebar-disabled-feature-color: var(--primary-400-muted);
+		--logo-transform: scale(1) translateX(0) translateY(-7%);
 		
 	}
 	
@@ -32,9 +33,7 @@
 	span.login-logo {
 		background-image: var(--logo-url) !important;
 		position: relative !important;
-		top: 7px;
-		left: 0;
-		transform: scale(1.2);
+		transform: var(--logo-transform);
 	}
 	
 	.navbar-brand .tenant-logo {
