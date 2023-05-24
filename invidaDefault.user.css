@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Invida (Default) 
 @namespace      github.com/openstyles/stylus
-@version        1.0.0
+@version        1.0.1
 @description    Generic branding for the main Invida web app 
 @author         Invida
 ==/UserStyle== */
@@ -33,7 +33,7 @@
 	span.login-logo {
 		background-image: var(--logo-url) !important;
 		position: relative !important;
-		transform: var(--logo-transform);
+		transform: var(--logo-transform) !important;
 	}
 	
 	.navbar-brand .tenant-logo {
@@ -46,7 +46,7 @@
 	}
 
 	.sidebar-bg, #sidebar {
-		background-color: var(--sidebar-color);
+		background-color: var(--sidebar-color) !important;
 	}
 
 	body {
@@ -82,16 +82,16 @@
 	}
 
 	.badge-cust {
-		color: #fff;
-		background-color: var(--secondary-400-muted);
+		color: #fff !important;
+		background-color: var(--secondary-400-muted) !important;
 	}
 
 	.navbar-header h4 {
-		display: inline-block;
-		color: var(--primary-300);
-		position: relative;
-		left: 19px;
-		font-size: 25px;
+		display: inline-block !important;
+		color: var(--primary-300) !important;
+		position: relative !important;
+		left: 19px !important;
+		font-size: 25px !important;
 	}
 
 	.navbar-nav .tenant-product-logo {
