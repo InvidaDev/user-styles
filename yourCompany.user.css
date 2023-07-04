@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           yourCompany
 @namespace      github.com/openstyles/stylus
-@version        1.0.4
+@version        1.0.5
 @description    Generic branding for the main Invida web app 
 @author         Invida
 ==/UserStyle== */
@@ -15,16 +15,22 @@
 	}
 
 	span.tenant-logo,
-	span.login-logo,
+	.navbar-brand span.tenant-logo,
 	.navbar-nav .tenant-product-logo {
 		background-image: var(--logo-url) !important;
 		position: relative !important;
 		top: 10px !important;
 		left: 5px !important;
 		right: initial !important;
+		height: 54px !important;
+		width: inherit !important;
 		bottom: initial !important;
-		transform: scale(1.2) !important;
+		transform: scale(1.1) !important;
 		margin: 0 !important;
+	}
+	
+	span.login-logo {
+		background-image: var(--logo-url) !important;
 	}
 
 	.background-branded {
