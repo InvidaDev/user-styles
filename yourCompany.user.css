@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           yourCompany
 @namespace      github.com/openstyles/stylus
-@version        1.0.5
+@version        1.0.6
 @description    Generic branding for the main Invida web app 
 @author         Invida
 ==/UserStyle== */
@@ -25,7 +25,7 @@
 		height: 54px !important;
 		width: inherit !important;
 		bottom: initial !important;
-		transform: scale(1.1) !important;
+		transform: scale(1.033) translateY(-3px) translateX(-3px) !important;
 		margin: 0 !important;
 	}
 	
@@ -53,6 +53,12 @@
 	html[data-ng-app="app"].ng-scope .login-page .login-v2 .login-content .login-buttons button[type=submit]:hover {
 		background-color: #472816 !important;
 	}
+
+	html[data-ng-app="app"].ng-scope .login-page {
+		background: unset !important;
+		background-color: unset !important;
+	}
+	
 	.navbar.navbar-inverse .navbar-brand,
 	.sidebar .nav > li.active > a,
 	.sidebar .nav > li.active > a:focus,
